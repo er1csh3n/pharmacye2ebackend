@@ -1,0 +1,5 @@
+package com.meijer.demo.security.handler;
+
+public class LogoutSuccessHandlerImpl {
+
+}

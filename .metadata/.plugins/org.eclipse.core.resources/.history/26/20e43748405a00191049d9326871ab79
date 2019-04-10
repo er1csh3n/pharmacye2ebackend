@@ -1,0 +1,76 @@
+/*package com.meijer.demo.beans;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+@Entity
+@Table (name="INSURANCE_DETAIL")
+public class InsuranceDetail {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO, generator = "INSURANCE_DETAIL_SEQ_GEN")
+	@SequenceGenerator(name = "INSURANCE_DETAIL_SEQ_GEN", sequenceName = "INSURANCE_DETAIL_SEQ", allocationSize = 1)
+	int id;
+	
+	@OneToOne
+	@JoinColumn(name = "INSURANCE_ID")
+	@JsonIgnore
+	Insurance insurance;
+	
+	@Column
+	int policy;
+	
+	@Column
+	int copay;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public int getPolicy() {
+		return policy;
+	}
+
+	public void setPolicy(int policy) {
+		this.policy = policy;
+	}
+
+	public int getCopay() {
+		return copay;
+	}
+
+	public void setCopay(int copay) {
+		this.copay = copay;
+	}
+
+	public Insurance getInsurance() {
+		return insurance;
+	}
+
+	public void setInsurance(Insurance insurance) {
+		this.insurance = insurance;
+	}
+
+	@Override
+	public String toString() {
+		return "InsuranceDetail [id=" + id + ", insurance=" + insurance + ", policy=" + policy + ", copay=" + copay
+				+ "]";
+	}
+
+	
+
+	
+}*/

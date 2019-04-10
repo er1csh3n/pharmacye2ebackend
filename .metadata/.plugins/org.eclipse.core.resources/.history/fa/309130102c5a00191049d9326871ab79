@@ -1,0 +1,26 @@
+package com.meijer.demo.beans;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+@Entity
+@Table (name="INSURANCE_DETAIL")
+public class InsuranceDetail {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO, generator = "INSURANCE_DETAIL_SEQ_GEN")
+	@SequenceGenerator(name = "INSURANCE_DETAIL_SEQ_GEN", sequenceName = "INSURANCE_DETAIL_SEQ", allocationSize = 1)
+	int id;
+	
+	@Column
+	int policy;
+	
+	@Column
+	int copay;
+
+}

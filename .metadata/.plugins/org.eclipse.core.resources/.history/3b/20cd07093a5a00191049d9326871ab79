@@ -1,0 +1,10 @@
+# Oracle settings
+spring.datasource.url=jdbc:oracle:thin:@localhost:1521:xe
+spring.datasource.username=er1csh3n
+spring.datasource.password=mercury
+spring.datasource.driver-class-oracle.jdbc.driver.OracleDriver
+spring.jpa.hibernate.ddl-auto=none
+spring.jpa.database-platform=org.hibernate.dialect.Oracle10gDialect
+
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=false

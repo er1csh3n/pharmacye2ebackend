@@ -1,0 +1,5 @@
+package com.meijer.demo.service;
+
+public class UserDetailService {
+
+}

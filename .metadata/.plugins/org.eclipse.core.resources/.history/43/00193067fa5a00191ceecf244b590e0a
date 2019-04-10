@@ -1,0 +1,11 @@
+package com.meijer.demo.dao;
+
+import java.util.List;
+
+import org.springframework.data.repository.CrudRepository;
+
+
+public interface OrderDao extends CrudRepository<Order, Integer>{
+
+	public List<Order> findByUserId(int id);
+}
