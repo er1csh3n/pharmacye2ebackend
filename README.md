@@ -1,2 +1,3 @@
-"# pharmacye2ebackend" 
-"# pharmacye2ebackend" 
+Demo folder contains all the source code
+
+Backend built with: Spring, Java, Hibernate, Oracle 11g
